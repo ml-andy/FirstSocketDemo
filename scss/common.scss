@@ -1,0 +1,74 @@
+@import "base.scss";
+* { box-sizing: border-box; }
+body{
+	background-color: #2dd7fb;
+}
+.loading{
+	@include flt;
+	z-index: 9999;
+	background-color: rgba(0,0,0,0.8);
+	span{
+		@include am(200px,50px);
+		@include font(15px,50px,#fff);
+		letter-spacing: 1px;
+		text-align: center;
+	}
+}
+.creatTeam{
+	@include flt;
+	background-color: #2dd7fb;
+	z-index: 100;
+	display: none;
+	.main{
+		@include am(350px,81px);
+		span{
+			@include r(100%,30px);
+			@include font(21px,30px,#fff,bolder);
+			letter-spacing: 2px;
+			text-align: center;
+		}
+		input{
+			@include r(100%,36px);
+			@include font(24px,26px,#41d445);
+			text-align: center;
+			padding: 10px;
+			margin-top: 15px;
+			background-color: #fff;
+			@include border-radius(10px);
+		}
+	}
+}
+.wrapper{
+	@include r;
+	padding-bottom: 40px;
+	z-index: 0;	
+	#messages {
+		@include r;		
+		li { 
+			@include r;
+			padding: 5px 10px; 
+			&:nth-child(odd) { background: #eee; }
+		}
+	}	
+}
+
+#sendbox{ 
+	@include flb(100%,auto);
+	background-color: #000;
+	padding: 3px;
+	z-index: 99;
+	input {
+		@include r(90%,auto);
+		@include font(13px,13px,#fff);
+		padding: 10px;
+	}
+	button { 
+		@include art(9%,100%);
+		@include font(13px,13px,#000);
+		background-color: rgb(130, 224, 255);
+		padding: 10px;
+		border:0;
+		cursor: pointer;
+		z-index: 9;
+	}
+}

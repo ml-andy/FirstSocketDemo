@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Andy First Socket Demo</title>
+<meta charset="UTF-8">
+<meta lang="tw">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=640,user-scalable=no">
+<meta name="description" content="don't laugh to die"/>
+<meta name="keywords" content="no keywords is keyword"/>
+<meta name="copyright" content="design : Medialand @ 2016"/>
+<meta property="og:title" content="Andy First Socket Demo"/>
+<meta property="og:type" content="website"/>    
+<meta property="og:image" content="images/fbsc.jpg"/>
+<meta property="og:site_name" content="Andy First Socket Demo"/>
+<meta property="og:description" content="don't laugh to die"/>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+<!---->
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="socket.io/socket.io.js"></script>
+<!--css-->
+<link rel="stylesheet" href="css/common.css"/>
+<!--js-->
+<script src="js/common.js"></script>
+</script>
+</head>
+<body>
+	<div class="loading"><span>Loading...</span></div>
+	<div class="creatTeam">
+		<div class="main">
+			<span>幫你的隊伍取個名字</span>
+			<input type="text" class="teamName">	
+		</div>		
+	</div>
+	<div class="wrapper">
+		<ul id="messages"></ul>    
+	</div>
+  	<form action="" id="sendbox">
+	  <input id="m" autocomplete="off" /><button>Send</button>
+	</form>
+</body>
+</html>
