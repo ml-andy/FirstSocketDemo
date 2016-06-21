@@ -5,9 +5,8 @@
     var socket = io();
     if(getUrlVars()['roomid']){
         socket.emit('enterRoom', getUrlVars()['roomid']);
-    }else{
-        $('.creatTeam').fadeIn(); 
     }
+    $('.creatTeam').fadeIn();
     
 
     //AddListener
@@ -38,7 +37,6 @@
     function windowload(){        
         $('.teamName').focus();
         showLoading(false);
-        
     }
 
    
@@ -47,7 +45,7 @@
         if(_t){
             $('.creatTeam').fadeIn();
         }else{            
-            showLoading(false);
+            $('.creatTeam').fadeOut();
         }
     }
     function showLoading(_t){
